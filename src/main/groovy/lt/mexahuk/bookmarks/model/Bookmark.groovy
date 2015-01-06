@@ -22,8 +22,7 @@ class Bookmark extends AbstractAnnotatedAggregateRoot<UUID> {
 
         command.with {
             notNull(url)
-            BookmarkAdded event = new BookmarkAdded(id: id, url: url, title: title)
-            apply(event);
+            apply(new BookmarkAdded(id: id, url: url, title: title));
         }
     }
 

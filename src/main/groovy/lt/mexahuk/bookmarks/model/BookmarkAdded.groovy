@@ -2,8 +2,8 @@ package lt.mexahuk.bookmarks.model
 
 class BookmarkAdded {
 
-    UUID id
-    String url
-    String title
+    private UUID id
+    private String url
+    private String title
 
 }
